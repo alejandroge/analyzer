@@ -1,3 +1,5 @@
-line_count = 0
-File.open("text.txt").each { |line| line_count += 1}
-puts line_count
+lines = File.readlines("text.txt")
+line_count = lines.size
+text = lines.join
+
+puts "#{line_count} lines"
