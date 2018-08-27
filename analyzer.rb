@@ -12,3 +12,9 @@ puts "#{total_characters_nospaces} characters (excluding spaces)"
 
 word_count = text.split.size
 puts "#{word_count} words"
+
+sentence_count = text.split(/\.|\?|!/).size
+puts "#{sentence_count} sentences"
+
+paragraph_count = text.split(/\n\n/).size
+puts "#{paragraph_count} paragraphs"
